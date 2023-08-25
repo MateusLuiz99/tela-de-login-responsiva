@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&family=Kulim+Park:wght@300;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans:wght@400;700&family=Quicksand:wght@400;700&family=Righteous&family=Roboto:wght@400;500;700&family=Sarala:wght@400;700&display=swap');
+
+body{
+    margin: 0;
+    background-image: url(/img/img-paisagem.jpg);
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+}
+body *{
+    box-sizing: border-box;
+}
+/* Caixa principal */
+.main-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+/* Lado esquerdo */
+.esq-box{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+.esq-box h1{
+    font-size: 3vw;
+    margin-top: 0px;
+    margin-bottom: 7px;
+}
+.esq-box h4{
+    font-size: 2vw;
+    margin-top: 0px;
+}
+.esq-box p{
+    line-height: 25px;
+    max-width: 450px;
+}
+
+/* Lado direito */
+.dir-box{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.box-login{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    border: 1px solid white;
+}
+.box-login h1{
+    margin: 0;
+    color: white;
+}
+.space-itens{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    margin: 10px 0px;
+}
+.space-itens label,
+.space-itens input,
+.space-itens button{
+    display: block;
+    padding: 10px;
+    border: 1px solid white;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+}
+.box-login h1{    
+    font-size: 30px;
+}
+.space-itens label{
+    font-weight: 800;
+    color: white;
+}
+.space-itens input{
+    border-top: none;
+}
+.btn-login{
+    width: 100%;
+    padding: 16px;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    cursor: pointer;
+    transition: .7s;
+    color: white;
+    background-color: #00ff88;
+}
+.btn-login:active{
+    transform: scale(0.95);
+}
+@media only screen and (max-width: 950px){
+    .box-login{
+        width: 85%;
+    }
+}
+@media only screen and (max-width: 600px){
+    .main-box{
+        flex-direction: column;
+    }
+    .esq-box p, h1, h4{
+        display: none;
+    }
+    .esq-box{
+        width: 100%;
+        height: auto;
+    }
+    .dir-box{
+        width: 100%;
+        height: auto;
+    }
+    .box-login{
+        width: 90%;
+    }
+}
